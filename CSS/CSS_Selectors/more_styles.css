@@ -1,3 +1,33 @@
 h1,h2 {
     color: olivedrab;
 }
+
+body{
+    background-color: #f1faee ;
+}
+
+button{
+    background-color: cadetblue;
+}
+
+#signup{
+    background-color: darkblue;
+    color: lightblue;
+}
+
+span{
+    color: lightcoral;
+}
+
+.tag {
+    background-color: wheat;
+    color: steelblue;
+}
+
+.post a {
+    background-color: rgb(212, 94, 47);
+}
+
+.footernav a{
+    color: tomato;
+}
