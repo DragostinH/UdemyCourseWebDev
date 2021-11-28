@@ -30,4 +30,19 @@ span{
 
 .footernav a{
     color: tomato;
+    border: 1px solid grey;
 }
+
+/* p:hover{
+    background-color: turquoise;
+} */
+
+/* p:nth-of-type(even){
+
+} */
+
+.footernav{
+    border: 4px solid black;
+    border-radius: 10px 100px / 120px;
+}
+
