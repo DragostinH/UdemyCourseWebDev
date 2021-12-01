@@ -1,0 +1,87 @@
+html {
+
+    /* font-size: 100px; */
+}
+
+h1 {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    border-bottom: darkslategrey;
+    
+    width: 30%;
+}
+
+
+/* 
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    /* font-size: 1em; */
+    /* font-size: 16px; */
+    /* font-size: 100px; */
+
+
+
+img {
+    width: 300px;
+
+    height: 5em;
+    /* margin: calc(10%/6); */
+    flex: 0 1 auto;
+    border-radius: 5%;
+}
+
+section {
+    /* padding: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 20px auto; */
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+    /* width: 50%; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgb(185, 185, 185), rgb(255, 255, 255));
+    margin: 1rem;
+    padding: 0.75em;
+    border-radius: 10px 100px / 120px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    color: #000000c4;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.1s, transform 0.25s;
+}
+
+button:hover {
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(223, 238, 208);
+    transform: translateY(-0.5em);
+    cursor: pointer;
+}
