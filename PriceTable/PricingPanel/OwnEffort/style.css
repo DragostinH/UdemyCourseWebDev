@@ -57,6 +57,7 @@ h2 {
     line-height: 1.5;
     padding: 15px 0;
     border-top: 1px solid #e1f1ff;
+    border-bottom: 1px solid #e1f1ff;
     list-style: none;
 }
 
