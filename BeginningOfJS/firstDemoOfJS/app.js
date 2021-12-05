@@ -13,6 +13,8 @@ switch (5 % 2) {
         console.log("odd");
         break;
 
+
+
     default:
         console.log("its not either even or odd")
         break;
