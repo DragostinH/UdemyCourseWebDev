@@ -30,8 +30,6 @@ if (guessNum === 'q') {
     console.log(`YOU GOT IT! It took you ${guesses} guess`);
 
 }
-
-
 // // if(!input){
 // // }
 
