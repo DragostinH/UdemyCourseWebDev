@@ -9,12 +9,11 @@ let guessNum = prompt("Enter your first guess");
 let guesses = 1;
 
 while (parseInt(guessNum) !== targetNum) {
-    guesses++;
     if (guessNum === 'q') break;
+    guesses++;
     if (guessNum > targetNum) {
         guessNum = prompt("You've guessed too high! Try again.");
     } else {
-        (guessNum < targetNum)
         guessNum = prompt("You have guessed too low! Try again.");
     }
 }
@@ -28,11 +27,4 @@ if (guessNum === 'q') {
 } else {
     console.log("CONGRATZ!");
     console.log(`YOU GOT IT! It took you ${guesses} guess`);
-
 }
-// // if(!input){
-// // }
-
-// parseInt(input);
-// prompt()
-
