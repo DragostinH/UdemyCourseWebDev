@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colours */
+
+    /* Primary */
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+
+
+    /* Neutral */
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --generic-white: hsl(0, 0%, 100%);
+
+    /* Body Copy */
+    --paragraph-font-size: 18px;
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Outfit, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+#card-container {
+    /* display: flex; */
+    /* align-items: center;
+    flex-direction: column; */
+    background-color: var(--card-bg-color);
+    border-radius: 1rem;
+    flex: 0;
+    /* border: 3px solid var(--generic-white); */
+}
+
+
+.card-image {
+    /* margin: 1em; */
+}
+
+.cube-image {
+    /* top right down left */
+    margin: 1.5em;
+    border-radius: 1rem;
+    width: 350px;
+}
+
+
+#card-text {
+    border: 2px solid var(--generic-white);
+    /* background-color: inherit; */
+}
+
+
+.text-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-title {
+
+        /* top right down left */
+    color: var(--generic-white);
+    background-color: inherit;
+    margin: 0 1.5em 0 1.5em;
+
+}
+
+.card-description {
+    color: var(--primary-soft-blue);
+    font-weight: 300;
+    background-color: inherit;
+    margin: 12px 36px 0 36px;
+    padding: 0;
+   
+
+}
+
+.card-paragraphs{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5em 0 1.5em;
+    font-size: var(--paragraph-font-size);
+    border: 1px solid var(--line-color);
+    border-width: 0 0 thin 0;
+    border-radius: 1px;
+    
+
+}
+
+.eth {
+    color: var(--primary-cyan);
+    font-weight: 600;
+    
+
+}
+
+.clock {
+    color: var(--primary-soft-blue);
+    font-weight: 300;
+    /* margin: 20px; */
+
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    margin: 0 1.5em 0 1.5em;
+    font-size: var(--paragraph-font-size);
+
+
+}
+
+.card-footer img{
+    border: 1px solid var(--generic-white);
+    border-radius: 50%;
+    flex: 0 1 auto;
+    width: 32px;
+    height: 32px;
+    margin-right: 1em;
+
+}
+
+.card-footer span{
+    color: var(--primary-soft-blue);
+    
+}
+
+.card-footer p{
+    color: var(--generic-white)
+}
