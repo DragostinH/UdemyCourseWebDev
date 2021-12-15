@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -7,7 +9,7 @@
 
     /* Primary */
     --primary-soft-blue: hsl(215, 51%, 70%);
-    --primary-cyan: hsl(178, 100%, 50%);
+    --primary-cyan: rgb(0, 255, 247);
 
 
     /* Neutral */
@@ -30,6 +32,21 @@ body {
     height: 1000px;
 }
 
+figure {
+    position: relative;
+    max-width: 100%;
+}
+
+.figure .hover-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+}
+
 #card-container {
     display: flex;
     padding: 1.5rem;
@@ -37,11 +54,8 @@ body {
     background-color: var(--card-bg-color);
     border-radius: 1rem;
     flex: 0;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
+    /* box-shadow: 0px 13px 13px teal; */
 }
-
-
 
 .cube-image {
 
@@ -50,21 +64,20 @@ body {
 }
 
 
-#card-text {
-    border: 2px solid var(--generic-white);
-}
-
-
-.text-info {
-    display: flex;
+#text-info {
     flex-direction: column;
-}
+    /* color: var(--generic-white); */
 
+}
 
 .card-title {
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+}
 
+
+#text-info .card-title {
     color: var(--generic-white);
-
 }
 
 .card-description {
@@ -89,10 +102,6 @@ body {
 
 }
 
-
-
-
-
 .eth {
     color: var(--primary-cyan);
     font-weight: 600;
@@ -110,12 +119,12 @@ body {
 
 
 
-.eth-section{
+.eth-section {
     display: flex;
     align-items: center;
 }
 
-.time-section{
+.time-section {
     display: flex;
     align-items: center;
 }
@@ -140,15 +149,58 @@ body {
 
 }
 
-.card-footer span {
+.card-footer .creation-of {
     color: var(--primary-soft-blue);
 
 }
 
-.card-footer p {
+.card-footer .creator {
     color: var(--generic-white);
 }
 
 
-/* MEDIA controls below this line */
+/* transitions */
+#card-container {
+    transition: box-shadow 0.25s 0.1s;
+}
 
+#card-container:hover {
+    box-shadow: 0px 6px 12px teal;
+}
+
+
+#text-info .card-title, .creator {
+    transition: color 0.25s 0.1s;
+}
+
+.creator:hover, #text-info .card-title:hover {
+    color: var(--primary-cyan);
+    cursor: pointer;
+}
+
+figure {
+    display: flex;
+    background-image: url(./img/image-equilibrium.jpg);
+    width: 350px;
+    height: 350px;
+    border-radius: 1rem;
+    margin: 0;
+    background-size: contain;
+    /* display: inline-block; */
+    /* position: relative; */
+}
+
+figure:hover {
+    opacity: 0.5;
+    background-image: linear-gradient(rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 1)),
+        url("./img/image-equilibrium.jpg");
+
+
+}
+
+
+
+
+
+
+/* MEDIA controls below this line */
