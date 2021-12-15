@@ -180,7 +180,7 @@ figure {
 
 figure {
     display: flex;
-    background-image: url(./img/image-equilibrium.jpg);
+    background-image: url("./img/image-equilibrium.jpg");
     width: 350px;
     height: 350px;
     border-radius: 1rem;
