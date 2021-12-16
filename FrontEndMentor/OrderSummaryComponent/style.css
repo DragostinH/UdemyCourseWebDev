@@ -171,3 +171,7 @@ h1 {
     color: rgba(56, 41, 224, 0.5);
     text-decoration: none;
 }
+
+.attribution{
+    margin-top: 2em;
+}
